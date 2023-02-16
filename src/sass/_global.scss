@@ -7,9 +7,24 @@
     box-sizing: border-box;
     font-family: poppins ;
 }
+$useCol : colors.$thcol;
+h2{
+    font-size: 3em;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    gap: .4em;
+    justify-content: center;
+    align-items: center;
+    hr{
+        width: 140px;
+        background-color: $useCol;
+        height: 2px;
+        border: none;
+    }
+}
 
 p{
-    width: min(700px , 100%);
       font-size: 1.2em;
       font-weight: 500;
       word-spacing: 2px;
@@ -21,9 +36,6 @@ a{
 }
 
 
-body{
-    background-color: #e1e1e1;
-}
 
 .wrap{
     width: min(1280px , 90%);
@@ -32,4 +44,7 @@ body{
 
 section , main{
     min-height: 100vh;
+}
+section{
+    margin-top: 3em;
 }

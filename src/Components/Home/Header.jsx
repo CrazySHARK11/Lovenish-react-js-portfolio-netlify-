@@ -1,7 +1,17 @@
+import { useState , useEffect } from "react"
 
 export default function Header() {
+
+    const[stick , setStick] = useState('')
+
+    useEffect(()=>{
+      window.onscroll = () =>{
+        window.scrollY > 10 ? setStick("sticked") : setStick("")
+      }
+    },[])
+
   return (
-    <header>
+    <header className={stick}>
         <div className="wrap">
             <nav>
                 <a href="#" className="logo">

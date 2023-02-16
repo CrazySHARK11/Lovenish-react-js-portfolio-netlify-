@@ -1,10 +1,41 @@
-import React from 'react'
+import React , {useEffect} from 'react'
+import "aos/dist/aos.css"
+import { BiCheckCircle } from "react-icons/all"
+import AOS from 'aos';
+import sub from "../../assets/man.png"
 
 export default function About() {
+
+  useEffect(()=>{
+    AOS.init({
+      duration: 500,
+      delay: 500,
+      disable : "mobile",
+     });
+  },[])
+
   return (
-    <section>
+    <section className='about'>
      <div className="wrap">
-     <h2>About</h2> 
+     <h2> <hr /> About <hr /> </h2> 
+    
+    <div className="ab_con">
+       
+       <div className="about-description">
+        <h3>Lets do some awesome things !</h3>
+        <p> My name is Lovenish and I am a passionate Front-end developer . I can build amazing websites professional looking website for a business which will include modern functionality which can make a website faster , user friendly and help you to give your business an identity </p>
+   <ul>
+    <li><BiCheckCircle /> Responsivness </li>
+     <li><BiCheckCircle /> Modern Funtionalities</li>
+     <li><BiCheckCircle /> Fast Performance</li>
+     <li><BiCheckCircle /> High Quality image</li>
+   </ul>
+
+       </div>
+
+      <img src={sub} className="sub_img" width="400" alt="" />
+    </div>
+
      </div>
     </section>
   )

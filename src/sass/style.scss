@@ -5,14 +5,33 @@
 
 $useCol : colors.$thcol;
 
+::-webkit-scrollbar{
+    width: 10px;
+    background-color:  #000;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $useCol;
+    border-radius: 10px;
+}
+
 // ================= Header ================== //
 header{
     animation: fadeIn 1s 1s forwards;
     opacity: 0;
     position: fixed;
     z-index: 100;
+    transition: 0.3s;
     width: 100%;
     top: 0;
+    
+}
+.sticked{
+    background-color: #fff ;
+    box-shadow: 0 0 5px #000;
+    nav{
+        transition: 0.3s;
+        padding: 5px 0;
+    }
 }
 .menu{
     display: flex;
@@ -48,9 +67,14 @@ nav{
         color: $useCol;
     }
 }
+
 // ================= Header ================== //
 
 // ================= Hero ================== //
+.banner{
+    background-image: url("../assets/brush.png");
+    background-size: cover;
+}
 .ban_con{
     display: flex;
     animation: fadeInUp 1s 1s forwards;
@@ -78,20 +102,106 @@ nav{
             color: $useCol;
         }
     }
-    .socials{
-        display: flex;
-        gap: 1em;
-        a{
-            font-size: 1.5em;
-            transition: 0.3s;
+}
+.socials{
+    display: flex;
+    gap: 1em;
+    a{
+        font-size: 1.5em;
+        transition: 0.3s;
+        color: #000;
+        &:hover{
+            color: $useCol;
+        }
+         
+    }
+}
+.subimg{
+    position: absolute;
+    width: min(300px , 100%);
+    right: 30px;
+    bottom: 0;
+}
+// ================= Hero ================== //
+
+// ================= About ================== //
+
+.ab_con{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    justify-content: space-around;
+    p{
+       width: min(600px , 100%);
+    }
+    h3{
+        font-size: 2em;
+        color: #000066;
+    }
+    img{
+        background-color: #f2eded;
+    }
+    ul{
+        li{
+            display: flex;
+            align-items: center;
+            @extend p;
+            gap: .3em;
+            list-style: none;
             color: #000;
-            &:hover{
-                color: $useCol;
+            svg{
+                fill: #07c700;
             }
         }
     }
 }
-// ================= Hero ================== //
+.sub_img{
+    width: min(400px , 100%);
+}
+.about-description{
+    display: flex;
+    width: min(600px , 100%);
+    flex-direction: column;
+   justify-content: center;
+   gap: 2em;
+   ul{
+    display: grid;
+   gap: 1em;
+}
+}
+// ================= About ================== //
+
+// ================= Footer ================== //
+footer{
+    min-height: 20vh;
+    background-image: url("../assets/triangle.png");
+    background-size: cover;
+    background-color: #f2eded;
+    padding: 20px;
+    margin-top: 2em;
+    background-position: bottom;
+}
+.samp{
+    height: 100vh;
+}
+.foo_row{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    .menu{
+        margin-bottom: 1em;
+    }
+}
+.credits{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+}
+// ================= Footer ================== //
+
 
 @media (max-width: 769px){
     .menu{
@@ -100,5 +210,8 @@ nav{
     .ban_con{
         align-items: center;
         text-align: center;
+    }
+    .subimg{
+        display: none;
     }
 }

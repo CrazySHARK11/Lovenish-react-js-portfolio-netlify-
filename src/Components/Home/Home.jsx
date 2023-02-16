@@ -1,4 +1,5 @@
 import { FaInstagram , FaFacebook , FaLinkedin , FaGithub } from "react-icons/all"
+import Imgmain from "../../assets/man.png"
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
               <a href="#"><FaLinkedin /></a>
               <a href="#"><FaGithub /></a>
               </div>
+              <img className="subimg" src={Imgmain} width="500" alt="subjectImg" />
         </div>
       </div>
     </main>
