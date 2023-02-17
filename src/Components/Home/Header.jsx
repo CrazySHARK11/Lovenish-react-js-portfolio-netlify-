@@ -1,5 +1,6 @@
 import { useState , useEffect } from "react"
-
+import { Link } from "react-router-dom"
+ 
 export default function Header() {
 
     const[stick , setStick] = useState('')
@@ -19,11 +20,10 @@ export default function Header() {
                 </a>
 
                 <div className="menu">
-                    <a href="#"> HOME </a>
-                    <a href="#"> ABOUT</a>
-                    <a href="#"> SERVICE </a>
-                    <a href="#"> SKILLS</a>
-                    <a href="#"> CONTACT </a>
+                    <Link to="/"> HOME </Link>
+                    <Link to="/service"> SERVICE </Link>
+                    <Link to="/skills"> SKILLS</Link>
+                    <Link to="/contact"> CONTACT </Link>
                 </div>
             </nav>
         </div>

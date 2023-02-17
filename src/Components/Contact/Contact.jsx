@@ -1,7 +1,15 @@
 import React from 'react'
+import Pagination from '../Pagination/Pagination'
 
 export default function Contact() {
   return (
-    <div>Contact</div>
+   <>
+      <Pagination page="contact" />
+    <section className="contact">
+      <div className="wrap">
+        
+      </div>
+    </section>
+   </>
   )
 }

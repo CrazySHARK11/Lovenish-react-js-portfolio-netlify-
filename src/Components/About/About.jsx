@@ -21,7 +21,7 @@ export default function About() {
     
     <div className="ab_con">
        
-       <div className="about-description">
+       <div className="about-description" data-aos="fade-up">
         <h3>Lets do some awesome things !</h3>
         <p> My name is Lovenish and I am a passionate Front-end developer . I can build amazing websites professional looking website for a business which will include modern functionality which can make a website faster , user friendly and help you to give your business an identity </p>
    <ul>
@@ -33,7 +33,7 @@ export default function About() {
 
        </div>
 
-      <img src={sub} className="sub_img" width="400" alt="" />
+      <img src={sub} className="sub_img" width="400" data-aos="fade-left" alt="subject" />
     </div>
 
      </div>
