@@ -20,10 +20,10 @@ export default function Header() {
                 </a>
 
                 <div className="menu">
-                    <Link to="/"> HOME </Link>
-                    <Link to="/service"> SERVICE </Link>
-                    <Link to="/skills"> SKILLS</Link>
-                    <Link to="/contact"> CONTACT </Link>
+                    <Link onClick={()=> window.scrollTo(0 , 0)} to="/"> HOME </Link>
+                    <Link onClick={()=> window.scrollTo(0 , 0)} to="/service"> SERVICE </Link>
+                    <Link onClick={()=> window.scrollTo(0 , 0)} to="/skills"> SKILLS</Link>
+                    <Link onClick={()=> window.scrollTo(0 , 0)} to="/contact"> CONTACT </Link>
                 </div>
             </nav>
         </div>

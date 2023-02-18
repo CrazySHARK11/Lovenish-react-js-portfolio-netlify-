@@ -1,4 +1,5 @@
 import { FaInstagram , FaFacebook , FaLinkedin , FaGithub } from "react-icons/all"
+import { Link } from "react-router-dom"
 
 
 export default function Footer() {
@@ -8,11 +9,10 @@ export default function Footer() {
            <div className="foo_row">
            <a href="#" className="logo">Lovenish</a>
            <div className="menu">
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">SERVICE</a>
-            <a href="#">SKILLS</a>
-            <a href="#">CONTACT</a>
+           <Link onClick={()=> window.scrollTo(0 , 0)} to="/"> HOME </Link>
+                    <Link onClick={()=> window.scrollTo(0 , 0)} to="/service"> SERVICE </Link>
+                    <Link onClick={()=> window.scrollTo(0 , 0)} to="/skills"> SKILLS</Link>
+                    <Link onClick={()=> window.scrollTo(0 , 0)} to="/contact"> CONTACT </Link>
            </div>
            </div>
            <hr />
