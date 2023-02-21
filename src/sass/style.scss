@@ -377,17 +377,43 @@ justify-content: center;
 }
 // ================= Pagination ================== //
 
-
+.menu-btn{
+    display: none;
+}
 @media (max-width: 769px){
-    .menu{
-        display: none;
+   nav .menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        padding: 0 5px;
+        top: 60px;
+        overflow: hidden;
+        align-items: center;
+        transition: 0.3s;
+        max-height: 0px;
+        width: 100%;
+        left: 0;
+        background-color: #aeaeae;
+        a{
+            margin: 5px 0;
+        }
+
+    }
+    .menu-btn{
+        display: block;
+    }
+    nav .active{
+        max-height: 900px;
     }
     .ban_con{
         align-items: center;
+        padding-top: 4em;
         text-align: center;
     }
     .subimg{
-        display: none;
+        display: block; 
+        position: static;
+        width: 300px;
     }
     .credits{
        justify-content: center;
