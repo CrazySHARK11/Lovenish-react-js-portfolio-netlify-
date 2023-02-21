@@ -18,7 +18,7 @@ export default function Header() {
         <div className="wrap">
             <nav>
                 <a href="#" className="logo">
-                    Lovenishaa <span>.</span>
+                    Lovenish<span>.</span>
                 </a>
 
                 <div className={`menu ${ active ? "active" : ""}`}>
