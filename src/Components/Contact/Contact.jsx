@@ -17,7 +17,7 @@ export default function Contact() {
            <p className='mail'>  <span className="cont_icon">  <FaEnvelope/> </span> lovenish.biz@gmail.com </p>
            </div>
 
-            <form name='contactForm' action="POST" data-netlify="true" >
+            <form name='contactForm' method='post' data-netlify="true" >
               <h3>Send me Message !</h3>
 
               <input type="text" name="name" placeholder='Username *' required />
