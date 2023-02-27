@@ -7,6 +7,10 @@
     box-sizing: border-box;
     font-family: poppins ;
 }
+
+#hideme{
+    display: none;
+}
 $useCol : colors.$thcol;
 .button{
     width: 130px;
