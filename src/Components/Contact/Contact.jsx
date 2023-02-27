@@ -17,7 +17,7 @@ export default function Contact() {
            <p className='mail'>  <span className="cont_icon">  <FaEnvelope/> </span> lovenish.biz@gmail.com </p>
            </div>
 
-            <form name='contactForms' method='post' data-netlify="true" >
+            <form  netlify netlify-honeypot="bot-field" name='contactForms' method='post' data-netlify="true" >
             <input type="hidden" name="form-name" value="contact" />
               <h3>Send me Message !</h3>
               <input type="hidden" name="form-name" value="contact" />
