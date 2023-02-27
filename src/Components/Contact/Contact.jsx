@@ -17,7 +17,7 @@ export default function Contact() {
            <p className='mail'>  <span className="cont_icon">  <FaEnvelope/> </span> lovenish.biz@gmail.com </p>
            </div>
 
-            <form action='POST' data-netlify="true">
+            <form action="POST" data-netlify="true" >
               <h3>Send me Message !</h3>
 
               <input type="text" name="name" placeholder='Username *' required />
@@ -26,7 +26,7 @@ export default function Contact() {
 
               <h3>Tell me about your project !</h3>
 
-              <textarea name="message" cols="30" rows="10"></textarea>
+              <textarea name="message" cols="30" rows="7"></textarea>
                
                <input type="submit" value="Submit" className='button' />
             </form>
