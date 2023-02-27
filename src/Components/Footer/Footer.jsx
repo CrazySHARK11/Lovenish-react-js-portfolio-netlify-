@@ -21,8 +21,8 @@ export default function Footer() {
             <div className="socials">
               <a href="#"><FaInstagram /></a>
               <a href="#"><FaFacebook /></a>
-              <a href="#"><FaLinkedin /></a>
-              <a href="#"><FaGithub /></a>
+              <a href="linkedin.com/in/lovenish-k-172136224"><FaLinkedin /></a>
+              <a href="https://github.com/CrazySHARK11"><FaGithub /></a>
               </div>
            </div>
         </div>

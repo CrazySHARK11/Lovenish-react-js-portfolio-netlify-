@@ -2,7 +2,7 @@ import React , {useEffect} from 'react'
 import "aos/dist/aos.css"
 import { BiCheckCircle } from "react-icons/all"
 import AOS from 'aos';
-import sub from "../../assets/man.png"
+import sub from "../../assets/developer.svg"
 
 export default function About() {
 
