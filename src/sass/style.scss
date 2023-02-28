@@ -376,6 +376,41 @@ justify-content: center;
 }
 // ================= Pagination ================== //
 
+// ================= My Work ==================== //
+.My_work{
+    padding: 3em 0;
+}
+.work_row{
+    display: flex;
+    margin-top: 2em;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.proj_card{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+    transition: 0.3s;
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    min-height: 300px;
+    background-color: #fff;
+    p{
+        text-align: left;
+    }
+    hr{
+        margin: 20px 0;
+    }
+    &:hover{
+        background-color: #ddddff;
+    }
+}
+
+// ================= My Work ==================== //
+
 .menu-btn{
     display: none;
 }
