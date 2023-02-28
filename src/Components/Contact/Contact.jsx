@@ -18,7 +18,7 @@ export default function Contact() {
            </div>
 
             <form name='contactForms' method='post'>
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value="contactForms" />
               <h3>Send me Message !</h3>
               <input type="hidden" name="form-name" value="contact" />
 
